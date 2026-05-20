@@ -1,0 +1,76 @@
+{"level":"info","time":"2026-05-19T17:03:54.236Z","seq":1,"component":"browser-library","msg":"Listening on 127.0.0.1:51033"}
+{"level":"info","time":"2026-05-19T17:03:54.253Z","seq":2,"component":"browser-library","event_kind":"grpc","action":"newBrowser","status":"started"}
+{"level":"info","time":"2026-05-19T17:03:54.934Z","seq":3,"component":"browser-library","msg":"Adding browser to stack: chromium, version: 147.0.7727.15"}
+{"level":"info","time":"2026-05-19T17:03:54.936Z","seq":4,"component":"browser-library","msg":"Adding 0 contexts to browser"}
+{"level":"info","time":"2026-05-19T17:03:54.937Z","seq":5,"component":"browser-library","event_kind":"grpc","action":"newBrowser","status":"succeeded"}
+{"level":"info","time":"2026-05-19T17:03:54.949Z","seq":6,"component":"browser-library","event_kind":"grpc","action":"newPage","status":"started"}
+{"level":"info","time":"2026-05-19T17:03:54.949Z","seq":7,"component":"browser-library","msg":"currentBrowser: {\"_contextStack\":[],\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@3510f1786c25c05033818180cd795e39\"},\"name\":\"chromium\",\"id\":\"browser=531caa97-b4cd-4883-a15a-86a394486e69\",\"headless\":false}"}
+{"level":"info","time":"2026-05-19T17:03:54.967Z","seq":8,"component":"browser-library","msg":"Setting default timeout for context context=17ad4f0d-b06f-4bf1-bfc7-ee0483de881f to 10000"}
+{"level":"info","time":"2026-05-19T17:03:54.967Z","seq":9,"component":"browser-library","msg":"Changed active context: context=17ad4f0d-b06f-4bf1-bfc7-ee0483de881f"}
+{"level":"info","time":"2026-05-19T17:03:55.135Z","seq":10,"component":"browser-library","msg":"Video path: undefined"}
+{"level":"info","time":"2026-05-19T17:03:55.135Z","seq":11,"component":"browser-library","msg":"Changed active page"}
+{"level":"info","time":"2026-05-19T17:03:57.713Z","seq":12,"component":"browser-library","event_kind":"grpc","action":"newPage","status":"succeeded"}
+{"level":"info","time":"2026-05-19T17:03:57.727Z","seq":13,"component":"browser-library","event_kind":"grpc","action":"fillText","status":"started"}
+{"level":"info","time":"2026-05-19T17:03:57.728Z","seq":14,"component":"browser-library","msg":"Strict mode is enabled, find Locator with id=firstName in page."}
+{"level":"info","time":"2026-05-19T17:03:57.863Z","seq":15,"component":"browser-library","event_kind":"grpc","action":"fillText","status":"succeeded"}
+{"level":"info","time":"2026-05-19T17:03:57.873Z","seq":16,"component":"browser-library","event_kind":"grpc","action":"fillText","status":"started"}
+{"level":"info","time":"2026-05-19T17:03:57.873Z","seq":17,"component":"browser-library","msg":"Strict mode is enabled, find Locator with id=lastName in page."}
+{"level":"info","time":"2026-05-19T17:03:57.907Z","seq":18,"component":"browser-library","event_kind":"grpc","action":"fillText","status":"succeeded"}
+{"level":"info","time":"2026-05-19T17:03:57.913Z","seq":19,"component":"browser-library","event_kind":"grpc","action":"fillText","status":"started"}
+{"level":"info","time":"2026-05-19T17:03:57.913Z","seq":20,"component":"browser-library","msg":"Strict mode is enabled, find Locator with id=userEmail in page."}
+{"level":"info","time":"2026-05-19T17:03:57.928Z","seq":21,"component":"browser-library","event_kind":"grpc","action":"fillText","status":"succeeded"}
+{"level":"info","time":"2026-05-19T17:03:57.934Z","seq":22,"component":"browser-library","event_kind":"grpc","action":"click","status":"started"}
+{"level":"info","time":"2026-05-19T17:03:57.934Z","seq":23,"component":"browser-library","msg":"Strict mode is enabled, find Locator with id=dateOfBirthInput in page."}
+{"level":"info","time":"2026-05-19T17:03:58.071Z","seq":24,"component":"browser-library","event_kind":"grpc","action":"click","status":"succeeded"}
+{"level":"info","time":"2026-05-19T17:03:58.077Z","seq":25,"component":"browser-library","event_kind":"grpc","action":"selectOption","status":"started"}
+{"level":"info","time":"2026-05-19T17:03:58.077Z","seq":26,"component":"browser-library","msg":"Strict mode is enabled, find Locator with xpath=//select[@class='react-datepicker__year-select'] in page."}
+{"level":"info","time":"2026-05-19T17:03:58.173Z","seq":27,"component":"browser-library","msg":"Option entries: 201"}
+{"level":"info","time":"2026-05-19T17:03:58.173Z","seq":28,"component":"browser-library","msg":"Selected entries: 1"}
+{"level":"info","time":"2026-05-19T17:03:58.173Z","seq":29,"component":"browser-library","event_kind":"grpc","action":"selectOption","status":"succeeded"}
+{"level":"info","time":"2026-05-19T17:03:58.183Z","seq":30,"component":"browser-library","event_kind":"grpc","action":"selectOption","status":"started"}
+{"level":"info","time":"2026-05-19T17:03:58.183Z","seq":31,"component":"browser-library","msg":"Strict mode is enabled, find Locator with xpath=//select[@class='react-datepicker__month-select'] in page."}
+{"level":"info","time":"2026-05-19T17:03:58.287Z","seq":32,"component":"browser-library","msg":"Option entries: 12"}
+{"level":"info","time":"2026-05-19T17:03:58.287Z","seq":33,"component":"browser-library","msg":"Selected entries: 1"}
+{"level":"info","time":"2026-05-19T17:03:58.287Z","seq":34,"component":"browser-library","event_kind":"grpc","action":"selectOption","status":"succeeded"}
+{"level":"info","time":"2026-05-19T17:03:58.291Z","seq":35,"component":"browser-library","event_kind":"grpc","action":"click","status":"started"}
+{"level":"info","time":"2026-05-19T17:03:58.291Z","seq":36,"component":"browser-library","msg":"Strict mode is enabled, find Locator with xpath=//div[contains(@class,'react-datepicker__day') and text()='24'] in page."}
+{"level":"info","time":"2026-05-19T17:03:58.350Z","seq":37,"component":"browser-library","event_kind":"grpc","action":"click","status":"succeeded"}
+{"level":"info","time":"2026-05-19T17:03:58.364Z","seq":38,"component":"browser-library","event_kind":"grpc","action":"checkCheckbox","status":"started"}
+{"level":"info","time":"2026-05-19T17:03:58.364Z","seq":39,"component":"browser-library","msg":"Strict mode is enabled, find Locator with xpath=//input[@value='Male'] in page."}
+{"level":"info","time":"2026-05-19T17:03:58.419Z","seq":40,"component":"browser-library","event_kind":"grpc","action":"checkCheckbox","status":"succeeded"}
+{"level":"info","time":"2026-05-19T17:03:58.424Z","seq":41,"component":"browser-library","event_kind":"grpc","action":"fillText","status":"started"}
+{"level":"info","time":"2026-05-19T17:03:58.425Z","seq":42,"component":"browser-library","msg":"Strict mode is enabled, find Locator with id=userNumber in page."}
+{"level":"info","time":"2026-05-19T17:03:58.449Z","seq":43,"component":"browser-library","event_kind":"grpc","action":"fillText","status":"succeeded"}
+{"level":"info","time":"2026-05-19T17:03:58.461Z","seq":44,"component":"browser-library","event_kind":"grpc","action":"fillText","status":"started"}
+{"level":"info","time":"2026-05-19T17:03:58.461Z","seq":45,"component":"browser-library","msg":"Strict mode is enabled, find Locator with id=subjectsInput in page."}
+{"level":"info","time":"2026-05-19T17:03:58.494Z","seq":46,"component":"browser-library","event_kind":"grpc","action":"fillText","status":"succeeded"}
+{"level":"info","time":"2026-05-19T17:03:58.500Z","seq":47,"component":"browser-library","event_kind":"grpc","action":"press","status":"started"}
+{"level":"info","time":"2026-05-19T17:03:58.501Z","seq":48,"component":"browser-library","msg":"Strict mode is enabled, find Locator with id=subjectsInput in page."}
+{"level":"info","time":"2026-05-19T17:03:58.522Z","seq":49,"component":"browser-library","event_kind":"grpc","action":"press","status":"succeeded"}
+{"level":"info","time":"2026-05-19T17:03:58.527Z","seq":50,"component":"browser-library","event_kind":"grpc","action":"checkCheckbox","status":"started"}
+{"level":"info","time":"2026-05-19T17:03:58.527Z","seq":51,"component":"browser-library","msg":"Strict mode is enabled, find Locator with xpath=//label[contains(text(), 'Sports')] in page."}
+{"level":"info","time":"2026-05-19T17:03:58.827Z","seq":52,"component":"browser-library","event_kind":"grpc","action":"checkCheckbox","status":"succeeded"}
+{"level":"info","time":"2026-05-19T17:03:58.839Z","seq":53,"component":"browser-library","msg":"Reading multiplepart uploadFileBySelector"}
+{"level":"info","time":"2026-05-19T17:03:58.840Z","seq":54,"component":"browser-library","msg":"Strict mode is enabled, find Locator with id=uploadPicture in page."}
+{"level":"info","time":"2026-05-19T17:03:58.840Z","seq":55,"component":"browser-library","msg":"Uploading file(s) C:\\Users\\infin\\automation-project\\robot-playwright-automation\\resources\\download.jpg to id=uploadPicture"}
+{"level":"info","time":"2026-05-19T17:03:58.887Z","seq":56,"component":"browser-library","event_kind":"grpc","action":"click","status":"started"}
+{"level":"info","time":"2026-05-19T17:03:58.888Z","seq":57,"component":"browser-library","msg":"Strict mode is enabled, find Locator with id=submit in page."}
+{"level":"info","time":"2026-05-19T17:03:58.975Z","seq":58,"component":"browser-library","event_kind":"grpc","action":"click","status":"succeeded"}
+{"level":"info","time":"2026-05-19T17:03:58.991Z","seq":59,"suite_id":"s1","suite_name":"Test2","component":"browser-library","event_kind":"grpc","action":"getBrowserCatalog","status":"started"}
+{"level":"info","time":"2026-05-19T17:03:58.995Z","seq":60,"suite_id":"s1","suite_name":"Test2","component":"browser-library","event_kind":"grpc","action":"getBrowserCatalog","status":"succeeded"}
+{"level":"info","time":"2026-05-19T17:03:58.999Z","seq":61,"suite_id":"s1","suite_name":"Test2","component":"browser-library","event_kind":"grpc","action":"getBrowserCatalog","status":"started"}
+{"level":"info","time":"2026-05-19T17:03:59.000Z","seq":62,"suite_id":"s1","suite_name":"Test2","component":"browser-library","event_kind":"grpc","action":"getBrowserCatalog","status":"succeeded"}
+{"level":"info","time":"2026-05-19T17:03:59.004Z","seq":63,"suite_id":"s1","suite_name":"Test2","component":"browser-library","event_kind":"grpc","action":"getBrowserCatalog","status":"started"}
+{"level":"info","time":"2026-05-19T17:03:59.004Z","seq":64,"suite_id":"s1","suite_name":"Test2","component":"browser-library","event_kind":"grpc","action":"getBrowserCatalog","status":"succeeded"}
+{"level":"info","time":"2026-05-19T17:03:59.009Z","seq":65,"suite_id":"s1","suite_name":"Test2","component":"browser-library","event_kind":"grpc","action":"getBrowserCatalog","status":"started"}
+{"level":"info","time":"2026-05-19T17:03:59.009Z","seq":66,"suite_id":"s1","suite_name":"Test2","component":"browser-library","event_kind":"grpc","action":"getBrowserCatalog","status":"succeeded"}
+{"level":"info","time":"2026-05-19T17:03:59.013Z","seq":67,"suite_id":"s1","suite_name":"Test2","component":"browser-library","msg":"Changed active context: context=17ad4f0d-b06f-4bf1-bfc7-ee0483de881f"}
+{"level":"info","time":"2026-05-19T17:03:59.013Z","seq":68,"suite_id":"s1","suite_name":"Test2","component":"browser-library","msg":"Changing current active page: page=f9d544d7-dad4-4c84-89c0-f0323439c90a"}
+{"level":"info","time":"2026-05-19T17:03:59.013Z","seq":69,"suite_id":"s1","suite_name":"Test2","component":"browser-library","msg":"Changed active page"}
+{"level":"info","time":"2026-05-19T17:03:59.019Z","seq":70,"suite_id":"s1","suite_name":"Test2","component":"browser-library","event_kind":"grpc","action":"closeContext","status":"started"}
+{"level":"info","time":"2026-05-19T17:03:59.043Z","seq":71,"suite_id":"s1","suite_name":"Test2","component":"browser-library","msg":"Removed page=11c50546-3dab-4f3d-8f7d-ca0191cf08f8 from context=17ad4f0d-b06f-4bf1-bfc7-ee0483de881f page stack"}
+{"level":"info","time":"2026-05-19T17:03:59.051Z","seq":72,"suite_id":"s1","suite_name":"Test2","component":"browser-library","event_kind":"grpc","action":"closeContext","status":"succeeded"}
+{"level":"info","time":"2026-05-19T17:03:59.070Z","seq":73,"component":"browser-library","event_kind":"grpc","action":"getBrowserCatalog","status":"started"}
+{"level":"info","time":"2026-05-19T17:03:59.071Z","seq":74,"component":"browser-library","event_kind":"grpc","action":"getBrowserCatalog","status":"succeeded"}
+{"level":"info","time":"2026-05-19T17:03:59.150Z","seq":75,"component":"browser-library","event_kind":"grpc","action":"closeAllBrowsers","status":"started"}
+{"level":"info","time":"2026-05-19T17:03:59.449Z","seq":76,"component":"browser-library","event_kind":"grpc","action":"closeAllBrowsers","status":"succeeded"}

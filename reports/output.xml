@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.13.2 on win32)" generated="2026-05-19T22:33:52.740194" rpa="false" schemaversion="5">
+<suite id="s1" name="Test2" source="C:\Users\infin\automation-project\robot-playwright-automation\tests\test2.robot">
+<test id="s1-t1" name="Test Case 2" line="11">
+<kw name="Read Data from CSV">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2026-05-19T22:33:53.152349" level="INFO">${data} = [{'first_name': 'abhishek', 'last_name': 'pandey', 'email': 'abhi@gmail.com', 'mobile': '5487963215', 'gender': 'Male', 'hobby': 'Sports', 'subject': 'Chemistry', 'day': '24', 'month': 'April', 'year'...</msg>
+<var>${data}</var>
+<arg>list(csv.DictReader(open(r'''${CSVFile}''', newline='', encoding='utf-8-sig')))</arg>
+<arg>modules=csv</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2026-05-19T22:33:53.146737" elapsed="0.005700"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${data}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-05-19T22:33:53.152793" elapsed="0.001251"/>
+</kw>
+<kw name="Get From List" owner="Collections">
+<msg time="2026-05-19T22:33:53.154923" level="INFO">${row} = {'first_name': 'abhishek', 'last_name': 'pandey', 'email': 'abhi@gmail.com', 'mobile': '5487963215', 'gender': 'Male', 'hobby': 'Sports', 'subject': 'Chemistry', 'day': '24', 'month': 'April', 'year':...</msg>
+<var>${row}</var>
+<arg>${data}</arg>
+<arg>0</arg>
+<doc>Returns the value specified with an ``index`` from ``list``.</doc>
+<status status="PASS" start="2026-05-19T22:33:53.154370" elapsed="0.000620"/>
+</kw>
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2026-05-19T22:33:53.155600" level="INFO">${first_name} = abhishek</msg>
+<var>${first_name}</var>
+<arg>${row}</arg>
+<arg>first_name</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<status status="PASS" start="2026-05-19T22:33:53.155233" elapsed="0.000445"/>
+</kw>
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2026-05-19T22:33:53.156197" level="INFO">${last_name} = pandey</msg>
+<var>${last_name}</var>
+<arg>${row}</arg>
+<arg>last_name</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<status status="PASS" start="2026-05-19T22:33:53.155832" elapsed="0.000449"/>
+</kw>
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2026-05-19T22:33:53.156807" level="INFO">${email} = abhi@gmail.com</msg>
+<var>${email}</var>
+<arg>${row}</arg>
+<arg>email</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<status status="PASS" start="2026-05-19T22:33:53.156492" elapsed="0.000351"/>
+</kw>
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2026-05-19T22:33:53.157917" level="INFO">${gender} = Male</msg>
+<var>${gender}</var>
+<arg>${row}</arg>
+<arg>gender</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<status status="PASS" start="2026-05-19T22:33:53.157187" elapsed="0.000798"/>
+</kw>
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2026-05-19T22:33:53.159798" level="INFO">${mobile} = 5487963215</msg>
+<var>${mobile}</var>
+<arg>${row}</arg>
+<arg>mobile</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<status status="PASS" start="2026-05-19T22:33:53.158744" elapsed="0.001129"/>
+</kw>
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2026-05-19T22:33:53.161216" level="INFO">${hobby} = Sports</msg>
+<var>${hobby}</var>
+<arg>${row}</arg>
+<arg>hobby</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<status status="PASS" start="2026-05-19T22:33:53.160440" elapsed="0.000977"/>
+</kw>
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2026-05-19T22:33:53.163004" level="INFO">${year} = 2000</msg>
+<var>${year}</var>
+<arg>${row}</arg>
+<arg>year</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<status status="PASS" start="2026-05-19T22:33:53.161813" elapsed="0.001460"/>
+</kw>
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2026-05-19T22:33:53.164918" level="INFO">${month} = April</msg>
+<var>${month}</var>
+<arg>${row}</arg>
+<arg>month</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<status status="PASS" start="2026-05-19T22:33:53.163546" elapsed="0.001432"/>
+</kw>
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2026-05-19T22:33:53.166796" level="INFO">${day} = 24</msg>
+<var>${day}</var>
+<arg>${row}</arg>
+<arg>day</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<status status="PASS" start="2026-05-19T22:33:53.165226" elapsed="0.001750"/>
+</kw>
+<kw name="Set Suite Variable" owner="BuiltIn">
+<msg time="2026-05-19T22:33:53.171928" level="INFO">${FIRST_NAME} = abhishek</msg>
+<arg>${FIRST_NAME}</arg>
+<arg>${first_name}</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<status status="PASS" start="2026-05-19T22:33:53.168750" elapsed="0.003513"/>
+</kw>
+<kw name="Set Suite Variable" owner="BuiltIn">
+<msg time="2026-05-19T22:33:53.174838" level="INFO">${LAST_NAME} = pandey</msg>
+<arg>${LAST_NAME}</arg>
+<arg>${last_name}</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<status status="PASS" start="2026-05-19T22:33:53.173028" elapsed="0.001887"/>
+</kw>
+<kw name="Set Suite Variable" owner="BuiltIn">
+<msg time="2026-05-19T22:33:53.175499" level="INFO">${EMAIL} = abhi@gmail.com</msg>
+<arg>${EMAIL}</arg>
+<arg>${email}</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<status status="PASS" start="2026-05-19T22:33:53.175093" elapsed="0.000450"/>
+</kw>
+<kw name="Set Suite Variable" owner="BuiltIn">
+<msg time="2026-05-19T22:33:53.175951" level="INFO">${GENDER} = Male</msg>
+<arg>${GENDER}</arg>
+<arg>${gender}</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<status status="PASS" start="2026-05-19T22:33:53.175659" elapsed="0.000329"/>
+</kw>
+<kw name="Set Suite Variable" owner="BuiltIn">
+<msg time="2026-05-19T22:33:53.176506" level="INFO">${MOBILE} = 5487963215</msg>
+<arg>${MOBILE}</arg>
+<arg>${mobile}</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<status status="PASS" start="2026-05-19T22:33:53.176092" elapsed="0.000459"/>
+</kw>
+<kw name="Set Suite Variable" owner="BuiltIn">
+<msg time="2026-05-19T22:33:53.176924" level="INFO">${HOBBY} = Sports</msg>
+<arg>${HOBBY}</arg>
+<arg>${hobby}</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<status status="PASS" start="2026-05-19T22:33:53.176651" elapsed="0.000311"/>
+</kw>
+<kw name="Set Suite Variable" owner="BuiltIn">
+<msg time="2026-05-19T22:33:53.177338" level="INFO">${YEAR} = 2000</msg>
+<arg>${YEAR}</arg>
+<arg>${year}</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<status status="PASS" start="2026-05-19T22:33:53.177071" elapsed="0.000307"/>
+</kw>
+<kw name="Set Suite Variable" owner="BuiltIn">
+<msg time="2026-05-19T22:33:53.177983" level="INFO">${MONTH} = April</msg>
+<arg>${MONTH}</arg>
+<arg>${month}</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<status status="PASS" start="2026-05-19T22:33:53.177490" elapsed="0.000542"/>
+</kw>
+<kw name="Set Suite Variable" owner="BuiltIn">
+<msg time="2026-05-19T22:33:53.178918" level="INFO">${DAY} = 24</msg>
+<arg>${DAY}</arg>
+<arg>${day}</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<status status="PASS" start="2026-05-19T22:33:53.178266" elapsed="0.000700"/>
+</kw>
+<status status="PASS" start="2026-05-19T22:33:53.144359" elapsed="0.034709"/>
+</kw>
+<kw name="New Browser" owner="Browser">
+<msg time="2026-05-19T22:33:53.181662" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\infin\\automation-project\\robot-playwright-automation\\reports\\browser\\traces\\temp\\da4fe3a7-50de-49f4-a328-9a3bde34f40c"}</msg>
+<msg time="2026-05-19T22:33:53.218592" level="INFO">Starting Browser process C:\Users\infin\automation-project\robot-playwright-automation\.venv\Lib\site-packages\Browser\wrapper\index.js using at 127.0.0.1:51033</msg>
+<msg time="2026-05-19T22:33:54.940340" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\infin\\automation-project\\robot-playwright-automation\\reports\\browser\\traces\\temp\\da4fe3a7-50de-49f4-a328-9a3bde34f40c"}</msg>
+<arg>chromium</arg>
+<arg>headless=false</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2026-05-19T22:33:53.179754" elapsed="1.760914"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2026-05-19T22:33:57.718124" level="INFO">Successfully initialized new page object and opened url: https://demoqa.com/automation-practice-form</msg>
+<msg time="2026-05-19T22:33:57.718201" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>https://demoqa.com/automation-practice-form</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2026-05-19T22:33:54.941586" elapsed="2.776746"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-05-19T22:33:57.720922" level="INFO">Fills the text 'abhishek' in the given field.</msg>
+<arg>id=firstName</arg>
+<arg>${FIRST_NAME}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-05-19T22:33:57.718775" elapsed="0.148505"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-05-19T22:33:57.869541" level="INFO">Fills the text 'pandey' in the given field.</msg>
+<arg>id=lastName</arg>
+<arg>${LAST_NAME}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-05-19T22:33:57.868090" elapsed="0.042417"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-05-19T22:33:57.911765" level="INFO">Fills the text 'abhi@gmail.com' in the given field.</msg>
+<arg>id=userEmail</arg>
+<arg>${EMAIL}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-05-19T22:33:57.910948" elapsed="0.019357"/>
+</kw>
+<kw name="Enter DOB">
+<kw name="Click" owner="Browser">
+<msg time="2026-05-19T22:33:57.932150" level="INFO">Clicks the element 'id=dateOfBirthInput'.</msg>
+<arg>id=dateOfBirthInput</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-05-19T22:33:57.931430" elapsed="0.142983"/>
+</kw>
+<kw name="Select Options By" owner="Browser">
+<msg time="2026-05-19T22:33:58.075451" level="INFO">Selects the option(s) 2000 by attribute SelectAttribute.label from element xpath=//select[@class='react-datepicker__year-select'].</msg>
+<arg>xpath=//select[@class='react-datepicker__year-select']</arg>
+<arg>label</arg>
+<arg>${YEAR}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Selects options from select element found by ``selector``.</doc>
+<status status="PASS" start="2026-05-19T22:33:58.074740" elapsed="0.105236"/>
+</kw>
+<kw name="Select Options By" owner="Browser">
+<msg time="2026-05-19T22:33:58.181107" level="INFO">Selects the option(s) April by attribute SelectAttribute.label from element xpath=//select[@class='react-datepicker__month-select'].</msg>
+<arg>xpath=//select[@class='react-datepicker__month-select']</arg>
+<arg>label</arg>
+<arg>${MONTH}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Selects options from select element found by ``selector``.</doc>
+<status status="PASS" start="2026-05-19T22:33:58.180259" elapsed="0.109353"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2026-05-19T22:33:58.290386" level="INFO">Clicks the element 'xpath=//div[contains(@class,'react-datepicker__day') and text()='24']'.</msg>
+<arg>xpath=//div[contains(@class,'react-datepicker__day') and text()='${DAY}']</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-05-19T22:33:58.289817" elapsed="0.065573"/>
+</kw>
+<status status="PASS" start="2026-05-19T22:33:57.930892" elapsed="0.425242"/>
+</kw>
+<kw name="Check Checkbox" owner="Browser">
+<arg>xpath=//input[@value='${GENDER}']</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Checks the checkbox or selects radio button found by ``selector``.</doc>
+<status status="PASS" start="2026-05-19T22:33:58.357509" elapsed="0.064512"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-05-19T22:33:58.423087" level="INFO">Fills the text '5487963215' in the given field.</msg>
+<arg>id=userNumber</arg>
+<arg>${MOBILE}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-05-19T22:33:58.422439" elapsed="0.030900"/>
+</kw>
+<kw name="Select Subject from Suggestion">
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-05-19T22:33:58.459173" level="INFO">Fills the text 'Chemistry' in the given field.</msg>
+<arg>id=subjectsInput</arg>
+<arg>Chemistry</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-05-19T22:33:58.456774" elapsed="0.040279"/>
+</kw>
+<kw name="Press Keys" owner="Browser">
+<arg>id=subjectsInput</arg>
+<arg>Enter</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given key combination into element found by ``selector``.</doc>
+<status status="PASS" start="2026-05-19T22:33:58.497548" elapsed="0.027233"/>
+</kw>
+<status status="PASS" start="2026-05-19T22:33:58.454636" elapsed="0.070361"/>
+</kw>
+<kw name="Check Checkbox" owner="Browser">
+<arg>xpath=//label[contains(text(), '${HOBBY}')]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Checks the checkbox or selects radio button found by ``selector``.</doc>
+<status status="PASS" start="2026-05-19T22:33:58.525701" elapsed="0.304061"/>
+</kw>
+<kw name="Upload Profile Pic">
+<kw name="Upload File By Selector" owner="Browser">
+<arg>id=uploadPicture</arg>
+<arg>${filePath}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Uploads file from ``path`` to file input element matched by selector.</doc>
+<status status="PASS" start="2026-05-19T22:33:58.831325" elapsed="0.049879"/>
+</kw>
+<status status="PASS" start="2026-05-19T22:33:58.830373" elapsed="0.051186"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2026-05-19T22:33:58.884143" level="INFO">Clicks the element 'id=submit'.</msg>
+<arg>id=submit</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-05-19T22:33:58.882332" elapsed="0.095911"/>
+</kw>
+<msg time="2026-05-19T22:33:59.008078" level="INFO">Switching context to context=17ad4f0d-b06f-4bf1-bfc7-ee0483de881f in CURRENT</msg>
+<msg time="2026-05-19T22:33:59.017574" level="INFO">Successfully changed active context: context=17ad4f0d-b06f-4bf1-bfc7-ee0483de881f</msg>
+<msg time="2026-05-19T22:33:59.053622" level="INFO">Successfully closed Context</msg>
+<status status="PASS" start="2026-05-19T22:33:53.142818" elapsed="5.835995"/>
+</test>
+<status status="PASS" start="2026-05-19T22:33:52.741405" elapsed="6.315400"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Test2" id="s1" pass="1" fail="0" skip="0">Test2</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
