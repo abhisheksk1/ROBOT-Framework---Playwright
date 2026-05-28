@@ -12,7 +12,7 @@ os.makedirs(REPORT_DIR)
 
 # Execute tests
 run(
-    "tests/test2.robot",
+    "tests/api_test.robot",
     outputdir=REPORT_DIR,
     output="output.xml",
     log="log.html",

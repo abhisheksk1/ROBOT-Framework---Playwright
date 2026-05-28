@@ -23,6 +23,7 @@ Test Case 2
     Check Checkbox    xpath=//label[contains(text(), '${HOBBY}')]
     Upload Profile Pic
     Click    id=submit
+    Close Browser
 
 *** Keywords ***
 Enter DOB
